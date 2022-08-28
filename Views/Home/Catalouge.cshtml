@@ -1,0 +1,57 @@
+﻿@*@model IEnumerable<PetShopNew.Models.Animals>*@
+@model PetShopNew.Models.Animals
+@{
+    ViewData["Title"] = "Catalouge";
+}
+
+<h1>Catalouge</h1>
+<body>
+
+<a asp-action="AnimalsIndex" asp-controller="AnimalController">SHOW ANIMALS WINDOW</a>
+
+<div>@Html.DisplayNameFor(n => n.Name): </div>
+
+
+
+
+<table>
+    @foreach (var n in Model.allAnimals)
+    {
+        <tr >
+            <td>@Model.Name</td>
+            <td >  </td>
+
+
+        </tr>
+        
+       
+    }
+  <tr>
+    <th>Picture</th>
+    
+    <th>Name</th>
+    <th>Description</th>
+    <th>Number of comments</th>
+
+  </tr>
+  <tr>
+    <td>
+        <img src="~/css/picture/dolphin.jpg"/>
+    </td>
+    <td>Dolphin</td>
+    <td>Dolphins are sea mamells.</td>
+    <th>Number of comments</th>
+  </tr>
+  <tr>
+    <td><img src="~/css/picture/lion.jpg"/></td>
+    <td>Lion</td>
+    <td>Lions orijinated from Africa</td>
+    <th>Number of comments</th>
+  </tr>
+
+  
+
+</table>
+
+</body>
+

@@ -1,0 +1,52 @@
+/*html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}*/
+
+</th > html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url("picture/petshoplogo.webp");
+    background-color: lightpink;
+    opacity: 0.6;
+    object-fit: contain;
+}
+
+img {
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+table, tr, td, th {
+    border: 2px solid;
+    width: 100%;
+}

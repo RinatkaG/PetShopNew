@@ -1,0 +1,75 @@
+﻿0000
+@model IEnumerable<PetShopNew.Models.Comments>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center"></div>
+    <h1 class="display-4">Welcome</h1>
+   @* <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+
+   <html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h5>WELLCOME TO PET SHOP</h5>
+<h3>HOME PAGE</h3>
+
+<select>
+@*@foreach (var c in )
+{
+    
+}*@
+
+</select>
+
+<table class="table">
+  <tr>
+    <th>Picture</th>
+    
+    <th>Name</th>
+    <th>Description</th>
+    <th>Number of comments</th>
+
+  </tr>
+  <tr>
+    <td>
+        <img src="~/css/picture/dolphin.jpg"/>
+    </td>
+    <td>Dolphin</td>
+    <td>Dolphins are sea mamells.</td>
+    <th>Number of comments</th>
+  </tr>
+  <tr>
+    <td><img src="~/css/picture/lion.jpg"/></td>
+    <td>Lion</td>
+    <td>Lions orijinated from Africa</td>
+    <th>Number of comments</th>
+  </tr>
+
+  
+
+</table>
+@*<button type="button" onclick="onClickCataloge()">CATALOGE</button>
+<button type="button" onclick="myFunction()">ADMINISTRATOR</button>
+*@
+
+</body>
+</html>

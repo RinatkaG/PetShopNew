@@ -1,0 +1,21 @@
+﻿@model PetShopNew.Models.Form
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FormView</title>
+</head>
+<body>
+      @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        @Html.EditorForModel()
+        <input type="submit" value="submit my name and password "/>
+    }
+</body>
+</html>

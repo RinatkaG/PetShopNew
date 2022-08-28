@@ -1,0 +1,22 @@
+﻿
+@model PetShopNew.Models.Animals
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AnimalsView</title>
+</head>
+<body>
+         @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        @Html.EditorForModel()
+        <input type="submit" value="send your comment "/>
+    }
+</body>
+</html>
