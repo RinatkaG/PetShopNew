@@ -21,12 +21,13 @@ namespace PetShopNew.Controllers
             return View();
         }
 
-        public IActionResult Catalouge()
+        public IActionResult Category()
         {
-            var animallsContext = _dBInfo.animals;
-            //_dBInfo.Entry(Catalouge)
-                //.Reference(a=>a.)
-            return View(model: Catalouge);
+            //var animallsContext = _dBInfo.category;
+            //_dBInfo.Entry(Category)
+            //    .Collection()
+            //    .Reference(a => a.)
+            return View(model: Category);
         }
         public IActionResult Administraitor()
         {

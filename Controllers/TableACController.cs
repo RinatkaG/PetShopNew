@@ -2,9 +2,9 @@
 
 namespace PetShopNew.Controllers
 {
-    public class CatalogueController : Controller
+    public class TableACController : Controller
     {
-        public IActionResult CatalogueIndex()
+        public IActionResult Index()
         {
             return View();
         }

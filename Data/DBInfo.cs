@@ -10,8 +10,10 @@ namespace PetShopNew.Data
       
         }
         public DbSet<Animals>? animals { get; set; }
-        public DbSet<Category>? catalogue { get; set; }
+        public DbSet<Category>? category { get; set; }
         public DbSet<Comments>? comment { get; set; }
+
+     
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Category>().HasData(
