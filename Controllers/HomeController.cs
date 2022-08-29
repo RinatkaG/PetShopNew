@@ -27,7 +27,7 @@ namespace PetShopNew.Controllers
             //_dBInfo.Entry(Category)
             //    .Collection()
             //    .Reference(a => a.)
-            return View(model: Category);
+            return View(/*model: Category*/);
         }
         public IActionResult Administraitor()
         {

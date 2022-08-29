@@ -4,9 +4,9 @@ namespace PetShopNew.Controllers
 {
     public class CategoryController : Controller
     {
-        public IActionResult CatalogueIndex()
+        public IActionResult CategoryIndex()
         {
-            return View();
+            return View("Category");
         }
     }
 }

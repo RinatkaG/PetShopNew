@@ -1,10 +1,10 @@
 ﻿@*@model IEnumerable<PetShopNew.Models.Animals>*@
 @model PetShopNew.Models.Animals
 @{
-    ViewData["Title"] = "Catalouge";
+    ViewData["Title"] = "Category";
 }
 
-<h1>Catalouge</h1>
+<h1>Category</h1>
 <body>
 
 <a asp-action="AnimalsIndex" asp-controller="AnimalController">SHOW ANIMALS WINDOW</a>
@@ -15,7 +15,7 @@
 
 
 <table>
-    @foreach (var n in Model.allAnimals)
+   @* @foreach (var n in Model.allAnimals)
     {
         <tr >
             <td>@Model.Name</td>
@@ -25,7 +25,7 @@
         </tr>
         
        
-    }
+    }*@
   <tr>
     <th>Picture</th>
     
