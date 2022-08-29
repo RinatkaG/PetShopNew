@@ -1,46 +1,43 @@
-﻿0000
-@model IEnumerable<PetShopNew.Models.Comments>
+﻿
+@model IEnumerable<PetShopNew.Models.Animals>
+  @*  @model PetShopNew.Models.Animals*@
 @{
     ViewData["Title"] = "Home Page";
 }
 <div class="text-center"></div>
-    <h1 class="display-4">Welcome</h1>
-   @* <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+<h1 class="display-4">Welcome</h1>
+@* <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
 
-   <html>
+<html>
 <head>
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 <body>
 
-<h5>WELLCOME TO PET SHOP</h5>
-<h3>HOME PAGE</h3>
+    <h5>WELLCOME TO PET SHOP</h5>
+    <h3>HOME PAGE</h3>
 
-<select>
-@*@foreach (var c in )
-{
-    
-}*@
 
-</select>
 
-<table class="table">
+
+<table>
+
   <tr>
     <th>Picture</th>
     
@@ -67,9 +64,38 @@ tr:nth-child(even) {
   
 
 </table>
-@*<button type="button" onclick="onClickCataloge()">CATALOGE</button>
-<button type="button" onclick="myFunction()">ADMINISTRATOR</button>
-*@
+
+
+@*
+   
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Number of Comments</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            @foreach (var tableCell in Model)
+            {
+                <tr>
+
+                    <td>@tableCell.AnimalsId</td>
+                    <td>@tableCell.Name</td>
+                    @*<td>@tableCell.Description</td>
+
+
+                </tr>
+            }
+
+       
+    @*<button type="button" onclick="onClickCataloge()">CATALOGE</button>
+    <button type="button" onclick="myFunction()">ADMINISTRATOR</button>
+    *@
 
 </body>
 </html>

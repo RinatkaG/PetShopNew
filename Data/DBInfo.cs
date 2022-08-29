@@ -31,10 +31,10 @@ namespace PetShopNew.Data
             );
 
             modelBuilder.Entity<Comments>().HasData(
-                new Comments { CommentsId = 1, Comment ="very cute!"},
-                new Comments { CommentsId = 2, Comment = "they are very smart" },
-                new Comments { CommentsId = 3, Comment = "I want one!" },
-                new Comments { CommentsId = 4, Comment = "soooo uglyyy" }
+                new Comments { CommentsId = 1, Comment ="very cute!" ,AnimalsId =2},
+                new Comments { CommentsId = 2, Comment = "they are very smart" ,AnimalsId =2 },
+                new Comments { CommentsId = 3, Comment = "I want one!" , AnimalsId = 1 },
+                new Comments { CommentsId = 4, Comment = "soooo uglyyy",AnimalsId =3 }
                 );
         }
     }

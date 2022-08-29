@@ -11,7 +11,7 @@ namespace PetShopNew.Models
         public string? PictureName { get; set; }
         public string? Description { get; set; }
         public int CategoryId { get; set; }
-        public List<Animals> allAnimals { get; set; }
+        //public List<Animals> allAnimals { get; set; }
 
         [Display(Name = " Email address:")]
         [StringLength(50)]

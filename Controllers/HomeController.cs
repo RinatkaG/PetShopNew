@@ -3,31 +3,32 @@ using PetShopNew.Data;
 using PetShopNew.Models;
 using System.Diagnostics;
 
+
 namespace PetShopNew.Controllers
 {
     public class HomeController : Controller
     {
         readonly DBInfo _dBInfo;
-        private readonly ILogger<HomeController> _logger;
+        
+        //private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger , DBInfo dBInfo)
+        public HomeController(/*ILogger<HomeController> logger,*/ DBInfo dBInfo) :base()
         {
-            _logger = logger;
+            //_logger = logger;
             _dBInfo = dBInfo;
         }
 
         public IActionResult Index()
         {
-            return View();
+           
+
+            return View(_dBInfo.animals);
         }
 
         public IActionResult Category()
         {
-            //var animallsContext = _dBInfo.category;
-            //_dBInfo.Entry(Category)
-            //    .Collection()
-            //    .Reference(a => a.)
-            return View(/*model: Category*/);
+         
+            return View(_dBInfo.animals);
         }
         public IActionResult Administraitor()
         {

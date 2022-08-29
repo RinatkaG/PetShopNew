@@ -1,5 +1,5 @@
-﻿@*@model IEnumerable<PetShopNew.Models.Animals>*@
-@model PetShopNew.Models.Animals
+﻿@model IEnumerable<PetShopNew.Models.Animals>
+
 @{
     ViewData["Title"] = "Category";
 }
@@ -12,46 +12,32 @@
 <div>@Html.DisplayNameFor(n => n.Name): </div>
 
 
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Number of Comments</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            @foreach (var tableCell in Model)
+            {
+                <tr>
+
+                    <td>@tableCell.AnimalsId</td>
+                    <td>@tableCell.Name</td>
+                    @*<td>@tableCell.Description</td>*@
 
 
-<table>
-   @* @foreach (var n in Model.allAnimals)
-    {
-        <tr >
-            <td>@Model.Name</td>
-            <td >  </td>
+                </tr>
+            }
 
-
-        </tr>
-        
-       
-    }*@
-  <tr>
-    <th>Picture</th>
-    
-    <th>Name</th>
-    <th>Description</th>
-    <th>Number of comments</th>
-
-  </tr>
-  <tr>
-    <td>
-        <img src="~/css/picture/dolphin.jpg"/>
-    </td>
-    <td>Dolphin</td>
-    <td>Dolphins are sea mamells.</td>
-    <th>Number of comments</th>
-  </tr>
-  <tr>
-    <td><img src="~/css/picture/lion.jpg"/></td>
-    <td>Lion</td>
-    <td>Lions orijinated from Africa</td>
-    <th>Number of comments</th>
-  </tr>
-
-  
-
-</table>
+        </tbody>
+        </table> 
 
 </body>
 
